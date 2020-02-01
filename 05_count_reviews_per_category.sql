@@ -1,5 +1,5 @@
 SELECT product_category,
-         count(*) as c
+         count(*) as count_reviews
 FROM amazon_reviews_parquet
 GROUP BY  product_category
-ORDER BY c DESC;
+ORDER BY count_reviews DESC;
